@@ -155,7 +155,7 @@ public class TestHandler {
         String expected = "true";
         String actual = "";
         try {
-            actual += alice.follows("baz");
+            actual += alice.follows("baz");             //-------------------------lowercase??????????????????????????????????????
         } catch (Exception e) {
             actual = TesterMessagesEnum.ERROR + e.getMessage();
         }
@@ -301,7 +301,7 @@ public class TestHandler {
         return this.tester.test("Alice, add 100 users, followee count is still 10", expected, actual);
     }
 
-    public boolean addFolloweeTest5(){
+    public boolean addFolloweeTest5() {
         User alice = new User("Alice");
         String expected = "true";
         String actual = "";
